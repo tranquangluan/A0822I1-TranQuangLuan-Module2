@@ -14,7 +14,7 @@ public class tinh_tong_duong_cheo_chinh {
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array[i].length; j++) {
                 System.out.println("a["+i+"]"+"["+j+"]:");
-                array[i][j] = sc.nextInt();
+                array[i][j] = Integer.parseInt(sc.nextLine());
             }
         }
 

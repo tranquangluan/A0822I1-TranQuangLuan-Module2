@@ -35,7 +35,7 @@ public class tong_cac_so_o_mot_cot {
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array[i].length; j++) {
                 System.out.println("a["+i+"]"+"["+j+"]:");
-                array[i][j] = sc.nextInt();
+                array[i][j] = Integer.parseInt(sc.nextLine());
             }
         }
 

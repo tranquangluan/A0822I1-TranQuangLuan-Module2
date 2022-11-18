@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class xoa_phan_tu {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int[] array = {10, 4, 6, 7, 8, 6, 0, 0, 0, 0};
+        int[] array = {10, 4, 6, 6, 7, 8, 6, 0, 0, 0, 0};
         System.out.println("Enter the value need to delete :");
         int n = sc.nextInt();
         int count = 0;
@@ -23,14 +23,13 @@ public class xoa_phan_tu {
                 for (int j = i; j < array.length - 1; j++) {
                     array[j] = array[j + 1];
                 }
+                i--;
                 for (int j = 0; j < array2.length; j++) {
                     array2[j] = array[j];
                 }
             }
         }
         System.out.println(Arrays.toString(array2));
-
-//
 
     }
 }
