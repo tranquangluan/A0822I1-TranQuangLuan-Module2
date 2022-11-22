@@ -1,9 +1,8 @@
 package ss03_array_method_java.exercise;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
-public class phan_tu_gia_tri_lon_nhat_trong_mang_2_chieu {
+public class Phan_tu_gia_tri_lon_nhat_trong_mang_2_chieu {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int[][] array = new int[3][3];

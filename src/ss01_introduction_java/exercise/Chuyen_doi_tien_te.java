@@ -2,7 +2,7 @@ package ss01_introduction_java.exercise;
 
 import java.util.Scanner;
 
-public class chuyen_doi_tien_te {
+public class Chuyen_doi_tien_te {
     public static void main(String[] args){
         double usd;
         Scanner sc = new Scanner(System.in);

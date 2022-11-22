@@ -2,7 +2,7 @@ package ss03_array_method_java.exercise;
 
 import java.util.Scanner;
 
-public class gia_tri_nho_nhat_trong_mang {
+public class Gia_tri_nho_nhat_trong_mang {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int[] array = new int[5];

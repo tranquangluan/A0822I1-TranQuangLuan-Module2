@@ -1,6 +1,6 @@
 package ss02_loop.exercise;
 
-public class hien_thi_20_so_nguyen_to_dau_tien {
+public class Hien_thi_20_so_nguyen_to_dau_tien {
     public static void main(String[] args) {
         int numbers = 20;
         int count = 0;

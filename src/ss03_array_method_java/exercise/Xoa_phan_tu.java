@@ -1,10 +1,9 @@
 package ss03_array_method_java.exercise;
 
-import java.sql.Array;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class xoa_phan_tu {
+public class Xoa_phan_tu {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int[] array = {10, 4, 6, 6, 7, 8, 6, 0, 0, 0, 0};

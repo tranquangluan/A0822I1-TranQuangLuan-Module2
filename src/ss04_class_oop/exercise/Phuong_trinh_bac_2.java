@@ -11,33 +11,18 @@ class QuadraticEquation {
         this.c = c;
     }
 
-    public QuadraticEquation() {
-
-    }
-
     public double getA() {
         return a;
-    }
-
-    public void setA(double a) {
-        this.a = a;
     }
 
     public double getB() {
         return b;
     }
 
-    public void setB(double b) {
-        this.b = b;
-    }
-
     public double getC() {
         return c;
     }
 
-    public void setC(double c) {
-        this.c = c;
-    }
     double getDiscriminant() {
         double delta = Math.pow(b, 2) - 4 * a * c;
         return delta;
@@ -55,23 +40,18 @@ class QuadraticEquation {
 
 }
 
-public class phuong_trinh_bac_2 {
+public class Phuong_trinh_bac_2 {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
 
-        QuadraticEquation quadraticEquation = new QuadraticEquation();
-
         System.out.println("Enter the coefficient of a:");
         double a = Double.parseDouble(sc.nextLine());
-        quadraticEquation.setA(a);
         System.out.println("Enter the coefficient of b:");
         double b = Double.parseDouble(sc.nextLine());
-        quadraticEquation.setB(b);
         System.out.println("Enter the coefficient of c:");
         double c = Double.parseDouble(sc.nextLine());
-        quadraticEquation.setC(c);
-
+        QuadraticEquation quadraticEquation = new QuadraticEquation(a,b,c);
         double delta = quadraticEquation.getDiscriminant();
 
         if (delta>=0){

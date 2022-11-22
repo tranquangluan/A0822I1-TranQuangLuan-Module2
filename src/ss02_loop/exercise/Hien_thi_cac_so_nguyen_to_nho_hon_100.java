@@ -1,8 +1,6 @@
 package ss02_loop.exercise;
 
-import java.util.Scanner;
-
-public class hien_thi_cac_so_nguyen_to_nho_hon_100 {
+public class Hien_thi_cac_so_nguyen_to_nho_hon_100 {
     public static void main(String[] args) {
 //        Scanner sc = new Scanner(System.in);
 //        int n = sc.nextInt();

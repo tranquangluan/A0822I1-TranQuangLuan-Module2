@@ -2,7 +2,7 @@ package ss03_array_method_java.exercise;
 
 import java.util.Scanner;
 
-public class tinh_tong_duong_cheo_chinh {
+public class Tinh_tong_duong_cheo_chinh {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
