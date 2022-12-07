@@ -1,8 +1,8 @@
 package ss06_Inheritance.exercise.Circle_Cylinder;
 
 public class Circle {
-    protected double radius;
-    protected String color;
+    private double radius;
+    private String color;
 
     public double getRadius() {
         return radius;
