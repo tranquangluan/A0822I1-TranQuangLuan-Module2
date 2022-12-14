@@ -4,16 +4,17 @@ import java.util.*;
 
 public class UseMapToCountWords {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+
+        Scanner sc = new Scanner(System.in);
         Map<String, Integer> countingMap = new TreeMap<>();
-        String input = scanner.nextLine();
+        String input = sc.nextLine();
         String[] words = input.split("");
         for (int i = 0; i < words.length; ++i) {
             words[i] = words[i].toLowerCase();
         }
         System.out.println("Given string : ");
-        for (String e : words) {
-            System.out.print(e);
+        for (String n : words) {
+            System.out.print(n);
         }
         countingMap.put(words[0], 1);
         for (int i = 1; i < words.length; ++i) {

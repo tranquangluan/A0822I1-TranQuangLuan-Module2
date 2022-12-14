@@ -5,44 +5,44 @@ import java.util.Stack;
 
 public class ReverseStack {
     public static int[] reverseIntegerNumber(int[] numbers) {
-        Stack<Integer> numberStack = new Stack<>();
-        for (int e : numbers) {
-            numberStack.push(e);
+        Stack<Integer> numbersStack = new Stack<>();
+        for (int n : numbers) {
+            numbersStack.push(n);
         }
         for (int i = 0; i < numbers.length; ++i) {
-            numbers[i] = numberStack.pop();
+            numbers[i] = numbersStack.pop();
         }
         return numbers;
     }
     public static String[] reverseString(String[] words) {
-        Stack<String> wordStack = new Stack<>();
+        Stack<String> wordsStack = new Stack<>();
         for (String e : words) {
-            wordStack.push(e);
+            wordsStack.push(e);
         }
         for (int i = 0; i < words.length; ++i) {
-            words[i] = wordStack.pop();
+            words[i] = wordsStack.pop();
         }
         return words;
     }
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("\nEnter a number : ");
-        String mNumber = scanner.nextLine();
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a number : ");
+        String mNumber = sc.nextLine();
         String[] tempArray = mNumber.split("");
         int[] numbers = new int[tempArray.length];
         for (int i = 0; i < tempArray.length; ++i) {
             numbers[i] = Integer.parseInt(tempArray[i]);
         }
         numbers = reverseIntegerNumber(numbers);
-        for (int e : numbers) {
-            System.out.print(e);
+        for (int n : numbers) {
+            System.out.print(n);
         }
-        System.out.print("\nEnter a string : ");
-        String mWord = scanner.nextLine();
+        System.out.println("Enter a string : ");
+        String mWord = sc.nextLine();
         String[] words = mWord.split("");
         words = reverseString(words);
-        for (String e : words) {
-            System.out.print(e);
+        for (String n : words) {
+            System.out.print(n);
         }
     }
 }
