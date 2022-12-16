@@ -9,17 +9,17 @@ public class ReverseStack {
         for (int n : numbers) {
             numbersStack.push(n);
         }
-        for (int i = 0; i < numbers.length; ++i) {
+        for (int i = 0; i <= numbers.length-1; i++) {
             numbers[i] = numbersStack.pop();
         }
         return numbers;
     }
     public static String[] reverseString(String[] words) {
         Stack<String> wordsStack = new Stack<>();
-        for (String e : words) {
-            wordsStack.push(e);
+        for (String n : words) {
+            wordsStack.push(n);
         }
-        for (int i = 0; i < words.length; ++i) {
+        for (int i = 0; i <= words.length-1; i++) {
             words[i] = wordsStack.pop();
         }
         return words;
@@ -30,7 +30,7 @@ public class ReverseStack {
         String mNumber = sc.nextLine();
         String[] tempArray = mNumber.split("");
         int[] numbers = new int[tempArray.length];
-        for (int i = 0; i < tempArray.length; ++i) {
+        for (int i = 0; i <= tempArray.length-1; i++) {
             numbers[i] = Integer.parseInt(tempArray[i]);
         }
         numbers = reverseIntegerNumber(numbers);
