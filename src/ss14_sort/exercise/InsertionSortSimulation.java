@@ -1,6 +1,6 @@
 package ss14_sort.exercise;
 
-public class Similation {
+public class InsertionSortSimulation {
     public static void insertionSort(int[] array) {
         for (int i = 1; i < array.length; i++) {
             display(array, i);

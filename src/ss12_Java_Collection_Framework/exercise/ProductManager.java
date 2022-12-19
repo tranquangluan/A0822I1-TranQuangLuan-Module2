@@ -4,27 +4,6 @@ import java.util.ArrayList;
 
 public class ProductManager {
 
-//    public static void checkProduct(){
-//
-//    }
-//    public static void addProduct(){
-//
-//    }
-//    public static void updateProduct(){
-//
-//    }
-//    public static void deleteProduct(){
-//
-//    }
-//    public static void displayProduct(){
-//
-//    }
-//    public static void searchProduct(){
-//
-//    }
-//    public static void sortProduct(){
-//
-//    }
     public static ArrayList<Product> products = new ArrayList<>();
 
     public static boolean isExistById(int id) {
