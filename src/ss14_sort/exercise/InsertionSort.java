@@ -1,29 +1,26 @@
 package ss14_sort.exercise;
 
+import java.util.Arrays;
+
 public class InsertionSort {
     public static void insertionSort(int[] array) {
-        for (int i = 1; i < array.length; i++) {
-            int position = i;
-            int flag = array[position];
-            while (position > 0 && flag < array[position - 1]) {
-                array[position] = array[position - 1];
-                position--;
+        int pos, x;
+        for(int i = 1; i < array.length; i++){
+            x = array[i];
+            pos = i;
+            while(pos > 0 && x < array[pos-1]){
+                array[pos] = array[pos-1];
+                pos--;
             }
-            array[position] = flag;
+            array[pos] = x;
         }
     }
     public static void main(String[] args) {
-        int[] numbers = {9, 5, 7, 3, 8, 1};
-        System.out.println("Initial array :");
-        for (int element : numbers) {
-            System.out.print(element +", ");
-        }
-        System.out.println();
-        System.out.println("After sort :");
-        insertionSort(numbers);
-        for (int element : numbers) {
-            System.out.print(element + ", ");
-        }
-        System.out.println();
+        int[] numberArray = {9, 5, 7, 3, 8, 1};
+        System.out.print("Initial array :");
+        System.out.println(Arrays.toString(numberArray));
+        System.out.print("After sort :");
+        insertionSort(numberArray);
+        System.out.print(Arrays.toString(numberArray));
     }
 }

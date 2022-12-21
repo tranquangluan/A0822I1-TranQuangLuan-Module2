@@ -1,30 +1,28 @@
 package ss14_sort.exercise;
 
+import java.util.Arrays;
+
 public class InsertionSortSimulation {
     public static void insertionSort(int[] array) {
-        for (int i = 1; i < array.length; i++) {
-            display(array, i);
-            int position = i;
-            int flag = array[i];
-            while (position > 0 && flag < array[position - 1]) {
-                array[position] = array[position - 1];
-                position--;
+        int pos, x;
+        for(int i = 1; i < array.length; i++){
+            x = array[i];
+            pos = i;
+//            System.out.println("Step "+i+":"+Arrays.toString(array));
+            while(pos > 0 && x < array[pos-1]){
+                array[pos] = array[pos-1];
+                pos--;
+                System.out.println("Step "+i+":"+Arrays.toString(array));
             }
-            array[position] = flag;
-            display(array, i);
+            array[pos] = x;
         }
-    }
-
-    public static void display(int[] array, int count) {
-        System.out.println("[" + count + "] : ");
-        for (int element : array) {
-            System.out.print(element + ", ");
-        }
-        System.out.println();
     }
 
     public static void main(String[] args) {
-        int[] numbers = {5, 2, 35, 19, 92, 21};
-        insertionSort(numbers);
+        int[] numberArray = {5, 2, 17, 35, 23, 21};
+        System.out.print("Initial array :");
+        System.out.println(Arrays.toString(numberArray));
+        insertionSort(numberArray);
+        System.out.print("After sort :" + Arrays.toString(numberArray));
     }
 }
