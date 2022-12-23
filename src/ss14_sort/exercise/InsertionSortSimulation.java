@@ -4,17 +4,18 @@ import java.util.Arrays;
 
 public class InsertionSortSimulation {
     public static void insertionSort(int[] array) {
-        int pos, x;
+        int pos, flag;
         for(int i = 1; i < array.length; i++){
-            x = array[i];
+            System.out.println("Step "+i+":"+Arrays.toString(array));
+            flag = array[i];
             pos = i;
-//            System.out.println("Step "+i+":"+Arrays.toString(array));
-            while(pos > 0 && x < array[pos-1]){
+            while(pos > 0 && flag < array[pos-1]){
                 array[pos] = array[pos-1];
                 pos--;
-                System.out.println("Step "+i+":"+Arrays.toString(array));
+
             }
-            array[pos] = x;
+            array[pos] = flag;
+            System.out.println("Step "+i+":"+Arrays.toString(array));
         }
     }
 
@@ -24,5 +25,7 @@ public class InsertionSortSimulation {
         System.out.println(Arrays.toString(numberArray));
         insertionSort(numberArray);
         System.out.print("After sort :" + Arrays.toString(numberArray));
+
     }
 }
+
